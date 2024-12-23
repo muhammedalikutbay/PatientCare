@@ -31,6 +31,8 @@ namespace HastaTakip
         {
             InitializeComponent();
             this.Load += new EventHandler(Form1_Load); // Form yüklendiğinde çalışacak event
+            MainPage mainPage = new MainPage();
+            LoadFormIntoPanel(mainPage);
         }
 
         private void Form1_Load(object sender, EventArgs e) { }
@@ -102,11 +104,10 @@ namespace HastaTakip
             LoadFormIntoPanel(clients);
         }
 
-        private void btnToDo_Click(object sender, EventArgs e)
+        private void BtnToDo_Click(object sender, EventArgs e)
         {
             ToDo toDo = new ToDo();
             LoadFormIntoPanel(toDo);
-            throw new ArgumentException("Kullanıcı adı boş olamaz.");
         }
 
         private void BtnCheckList_Click(object sender, EventArgs e)

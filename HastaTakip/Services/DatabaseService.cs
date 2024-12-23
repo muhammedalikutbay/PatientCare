@@ -1,8 +1,7 @@
-﻿
-using HastaTakip.Interfaces;
-using System.Windows.Forms;
-using System;
+﻿using System;
 using System.Data.SQLite;
+using System.Windows.Forms;
+using HastaTakip.Interfaces;
 
 namespace HastaTakip.Services
 {
@@ -10,18 +9,16 @@ namespace HastaTakip.Services
     {
         public void CreateDatabase()
         {
-            try
+            // SQLite veritabanı dosyasını oluşturma
+            string connectionString = "Data Source=ClientFollow.db;Version=3;";
+
+            using (SQLiteConnection conn = new SQLiteConnection(connectionString))
             {
-                // SQLite veritabanı dosyasını oluşturma
-                string connectionString = "Data Source=ClientFollow.db;Version=3;";
+                conn.Open();
 
-                using (SQLiteConnection conn = new SQLiteConnection(connectionString))
-                {
-                    conn.Open();
-              
-
-                    // User tablosunu oluştur
-                    string createTableQuery = @"
+                // User tablosunu oluştur
+                string createTableQuery =
+                    @"
                   CREATE TABLE IF NOT EXISTS Client(
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,
                         ClientOwner TEXT NOT NULL,
@@ -33,21 +30,13 @@ namespace HastaTakip.Services
                         EstablishTime DATETIME NULL,
                         Notes TEXT NULL
                     );";
-                    ;
+                ;
 
-                    using (SQLiteCommand cmd = new SQLiteCommand(createTableQuery, conn))
-                    {
-                        cmd.ExecuteNonQuery();  // Sorguyu çalıştır
-                    }
-
-                    MessageBox.Show("Veritabanı ve tablo başarıyla oluşturuldu!");
+                using (SQLiteCommand cmd = new SQLiteCommand(createTableQuery, conn))
+                {
+                    cmd.ExecuteNonQuery(); // Sorguyu çalıştır
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Hata oluştu: " + ex.Message);
-            }
-            
         }
 
         public void CreateTables()

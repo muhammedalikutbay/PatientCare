@@ -236,7 +236,7 @@
             this.btnToDo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnToDo.Textcolor = System.Drawing.Color.Black;
             this.btnToDo.TextFont = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnToDo.Click += new System.EventHandler(this.btnToDo_Click);
+            this.btnToDo.Click += new System.EventHandler(this.BtnToDo_Click);
             // 
             // pnCheckList
             // 
