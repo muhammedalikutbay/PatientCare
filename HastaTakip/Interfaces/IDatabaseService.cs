@@ -1,6 +1,4 @@
-﻿
-
-namespace HastaTakip.Interfaces
+﻿namespace HastaTakip.Interfaces
 {
     public interface IDatabaseService
     {

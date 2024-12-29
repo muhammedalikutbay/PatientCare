@@ -46,11 +46,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.BtnTreatment = new Bunifu.Framework.UI.BunifuTileButton();
+            this.TB_Treatment = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TB_Diagnosis = new System.Windows.Forms.TextBox();
-            this.TB_Treatment = new System.Windows.Forms.TextBox();
-            this.BtnTreatment = new Bunifu.Framework.UI.BunifuTileButton();
             this.Btn_Di = new Bunifu.Framework.UI.BunifuTileButton();
             ((System.ComponentModel.ISupportInitialize)(this.PB_PatientsType)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_PatientsGender)).BeginInit();
@@ -268,6 +268,36 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(720, 458);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
+            // BtnTreatment
+            // 
+            this.BtnTreatment.BackColor = System.Drawing.Color.SeaGreen;
+            this.BtnTreatment.color = System.Drawing.Color.SeaGreen;
+            this.BtnTreatment.colorActive = System.Drawing.Color.MediumSeaGreen;
+            this.BtnTreatment.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnTreatment.Font = new System.Drawing.Font("Century Gothic", 15.75F);
+            this.BtnTreatment.ForeColor = System.Drawing.Color.White;
+            this.BtnTreatment.Image = ((System.Drawing.Image)(resources.GetObject("BtnTreatment.Image")));
+            this.BtnTreatment.ImagePosition = 8;
+            this.BtnTreatment.ImageZoom = 64;
+            this.BtnTreatment.LabelPosition = 0;
+            this.BtnTreatment.LabelText = "";
+            this.BtnTreatment.Location = new System.Drawing.Point(682, 387);
+            this.BtnTreatment.Margin = new System.Windows.Forms.Padding(6);
+            this.BtnTreatment.Name = "BtnTreatment";
+            this.BtnTreatment.Size = new System.Drawing.Size(32, 32);
+            this.BtnTreatment.TabIndex = 4;
+            this.BtnTreatment.Click += new System.EventHandler(this.BtnTreatment_Click);
+            // 
+            // TB_Treatment
+            // 
+            this.TB_Treatment.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TB_Treatment.Enabled = false;
+            this.TB_Treatment.Location = new System.Drawing.Point(363, 79);
+            this.TB_Treatment.Multiline = true;
+            this.TB_Treatment.Name = "TB_Treatment";
+            this.TB_Treatment.Size = new System.Drawing.Size(354, 299);
+            this.TB_Treatment.TabIndex = 3;
+            // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -303,36 +333,6 @@
             this.TB_Diagnosis.Name = "TB_Diagnosis";
             this.TB_Diagnosis.Size = new System.Drawing.Size(354, 299);
             this.TB_Diagnosis.TabIndex = 2;
-            // 
-            // TB_Treatment
-            // 
-            this.TB_Treatment.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TB_Treatment.Enabled = false;
-            this.TB_Treatment.Location = new System.Drawing.Point(363, 79);
-            this.TB_Treatment.Multiline = true;
-            this.TB_Treatment.Name = "TB_Treatment";
-            this.TB_Treatment.Size = new System.Drawing.Size(354, 299);
-            this.TB_Treatment.TabIndex = 3;
-            // 
-            // BtnTreatment
-            // 
-            this.BtnTreatment.BackColor = System.Drawing.Color.SeaGreen;
-            this.BtnTreatment.color = System.Drawing.Color.SeaGreen;
-            this.BtnTreatment.colorActive = System.Drawing.Color.MediumSeaGreen;
-            this.BtnTreatment.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnTreatment.Font = new System.Drawing.Font("Century Gothic", 15.75F);
-            this.BtnTreatment.ForeColor = System.Drawing.Color.White;
-            this.BtnTreatment.Image = ((System.Drawing.Image)(resources.GetObject("BtnTreatment.Image")));
-            this.BtnTreatment.ImagePosition = 8;
-            this.BtnTreatment.ImageZoom = 64;
-            this.BtnTreatment.LabelPosition = 0;
-            this.BtnTreatment.LabelText = "";
-            this.BtnTreatment.Location = new System.Drawing.Point(682, 387);
-            this.BtnTreatment.Margin = new System.Windows.Forms.Padding(6);
-            this.BtnTreatment.Name = "BtnTreatment";
-            this.BtnTreatment.Size = new System.Drawing.Size(32, 32);
-            this.BtnTreatment.TabIndex = 4;
-            this.BtnTreatment.Click += new System.EventHandler(this.BtnTreatment_Click);
             // 
             // Btn_Di
             // 

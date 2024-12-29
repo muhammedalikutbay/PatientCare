@@ -1,11 +1,11 @@
 ﻿using System.Data.SQLite;
+using System.Configuration;
 
 namespace HastaTakip.Services
 {
     public static partial class DataTables
     {
-        private static string ConnectionString { get; set; } =
-            "Data Source=PatientFalllow.db;Version=3;";
+        private static string ConnectionString { get; set; } = ConfigurationManager.ConnectionStrings["MyDatabaseConnection"].ConnectionString;
 
         private static void Patients()
         {
@@ -13,24 +13,24 @@ namespace HastaTakip.Services
             {
                 conn.Open();
 
-                // User tablosunu oluştur
                 string createTableQuery =
                     @"
-                  CREATE TABLE IF NOT EXISTS Patients(
-                      ""PatientId""	INTEGER,
-	                  ""OwnerId""	INTEGER,
-	                  ""PatientName""	BLOB,
-	                  ""PatientGender""	TEXT,
-	                  ""RegistrationDate""	DATETIME,
-	                  ""PatientNote""	TEXT,
-	                  PRIMARY KEY(""PatientId""),
-	                  FOREIGN KEY(""OwnerId"") REFERENCES ""PatientOwners""(""PatientOwnerId"")
+                      CREATE TABLE IF NOT EXISTS Patients(
+                          ""Id""	INTEGER,
+	                      ""OwnerId""	INTEGER,
+	                      ""PatientName""	TEXT,
+	                      ""PatientGender""	TEXT,
+	                      ""RegistrationDate""	TEXT,
+	                      ""PatientNote""	TEXT,
+
+	                      PRIMARY KEY(""Id""),
+	                      FOREIGN KEY(""OwnerId"") REFERENCES ""PatientOwners""(""Id"")
                     );";
                 ;
 
                 using (SQLiteCommand cmd = new SQLiteCommand(createTableQuery, conn))
                 {
-                    cmd.ExecuteNonQuery(); // Sorguyu çalıştır
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
@@ -41,21 +41,21 @@ namespace HastaTakip.Services
             {
                 conn.Open();
 
-                // User tablosunu oluştur
                 string createTableQuery =
                     @"
-                  CREATE TABLE IF NOT EXISTS PatientsOwner(
-                        ""PatientOwnerId""	INTEGER,
-	                    ""OwnerName""	TEXT,
-	                    ""OwnerAdress""	TEXT,
-	                    ""OwnerPhone""	INTEGER,
-	                    PRIMARY KEY(""PatientOwnerId"")
+                      CREATE TABLE IF NOT EXISTS PatientsOwner(
+                            ""Id""	INTEGER,
+	                        ""OwnerName""	TEXT,
+	                        ""OwnerAdress""	TEXT,
+	                        ""OwnerPhone""	INTEGER,
+
+	                        PRIMARY KEY(""Id"")
                     );";
                 ;
 
                 using (SQLiteCommand cmd = new SQLiteCommand(createTableQuery, conn))
                 {
-                    cmd.ExecuteNonQuery(); // Sorguyu çalıştır
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
@@ -66,23 +66,23 @@ namespace HastaTakip.Services
             {
                 conn.Open();
 
-                // User tablosunu oluştur
                 string createTableQuery =
                     @"
-                  CREATE TABLE IF NOT EXISTS Treatments(
-	                ""TreatmentID ""	INTEGER,
-	                ""PatientID ""	INTEGER,
-	                "" TreatmentDate""	DATETIME,
-	                ""Diagnosis ""	TEXT,
-	                "" TreatmentDetails""	TEXT,
-	                PRIMARY KEY(""TreatmentID ""),
-	                FOREIGN KEY(""PatientID "") REFERENCES ""Patients""(""PatientId"")
+                      CREATE TABLE IF NOT EXISTS Treatments(
+	                    ""Id""	INTEGER,
+	                    ""PatientId""	INTEGER,
+	                    "" TreatmentDate""	DATETIME,
+	                    ""Diagnosis""	TEXT,
+	                    "" TreatmentDetails""	TEXT,
+
+	                    PRIMARY KEY(""Id""),
+	                    FOREIGN KEY(""PatientId"") REFERENCES ""Patients""(""Id"")
                     );";
                 ;
 
                 using (SQLiteCommand cmd = new SQLiteCommand(createTableQuery, conn))
                 {
-                    cmd.ExecuteNonQuery(); // Sorguyu çalıştır
+                    cmd.ExecuteNonQuery();
                 }
             }
         }
