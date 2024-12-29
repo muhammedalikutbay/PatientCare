@@ -59,6 +59,7 @@ namespace HastaTakip
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error
             );
+            Console.WriteLine("Hata Burdan Başlyor amk: \n \n\n",e);
            
         }
     }
