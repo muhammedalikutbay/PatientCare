@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SQLite;
 using System.Drawing;
@@ -90,6 +92,7 @@ namespace HastaTakip
         private void btnHam_Click(object sender, EventArgs e)
         {
             sidebarTransition.Start();
+            throw new NotImplementedException();
         }
 
         private void btnMainPage_Click(object sender, EventArgs e)

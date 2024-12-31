@@ -1,11 +1,14 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace Handlers
+namespace HastaTakip.Handler
 {
     public static class ExceptionHandler
     {
-        public static void HandleThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
+        public static void HandleThreadException(
+            object sender,
+            System.Threading.ThreadExceptionEventArgs e
+        )
         {
             MessageBox.Show(
                 "Arayüzde bir hata oluştu.",
