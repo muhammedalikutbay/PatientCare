@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatientsAdd));
-            this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.foxLabel1 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel2 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel3 = new ReaLTaiizor.Controls.FoxLabel();
@@ -39,32 +38,9 @@
             this.Txt_Name = new System.Windows.Forms.TextBox();
             this.Txt_Gender = new System.Windows.Forms.TextBox();
             this.Txt_Note = new System.Windows.Forms.TextBox();
-            this.Txt_Owner = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Btn_OwnerAdd = new ReaLTaiizor.Controls.FoxLabel();
             this.SuspendLayout();
-            // 
-            // nightControlBox1
-            // 
-            this.nightControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nightControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.nightControlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.nightControlBox1.DefaultLocation = true;
-            this.nightControlBox1.DisableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox1.DisableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.EnableMaximizeButton = true;
-            this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.EnableMinimizeButton = true;
-            this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(350, 0);
-            this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.Name = "nightControlBox1";
-            this.nightControlBox1.Size = new System.Drawing.Size(139, 31);
-            this.nightControlBox1.TabIndex = 0;
             // 
             // foxLabel1
             // 
@@ -93,7 +69,7 @@
             this.foxLabel3.BackColor = System.Drawing.Color.Transparent;
             this.foxLabel3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.foxLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel3.Location = new System.Drawing.Point(50, 130);
+            this.foxLabel3.Location = new System.Drawing.Point(50, 134);
             this.foxLabel3.Name = "foxLabel3";
             this.foxLabel3.Size = new System.Drawing.Size(118, 29);
             this.foxLabel3.TabIndex = 5;
@@ -104,7 +80,7 @@
             this.foxLabel5.BackColor = System.Drawing.Color.Transparent;
             this.foxLabel5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.foxLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
-            this.foxLabel5.Location = new System.Drawing.Point(50, 165);
+            this.foxLabel5.Location = new System.Drawing.Point(50, 171);
             this.foxLabel5.Name = "foxLabel5";
             this.foxLabel5.Size = new System.Drawing.Size(118, 29);
             this.foxLabel5.TabIndex = 9;
@@ -123,7 +99,7 @@
             this.Btn_Add.ImageZoom = 32;
             this.Btn_Add.LabelPosition = 32;
             this.Btn_Add.LabelText = "Ekle";
-            this.Btn_Add.Location = new System.Drawing.Point(389, 204);
+            this.Btn_Add.Location = new System.Drawing.Point(375, 231);
             this.Btn_Add.Margin = new System.Windows.Forms.Padding(6);
             this.Btn_Add.Name = "Btn_Add";
             this.Btn_Add.Size = new System.Drawing.Size(64, 64);
@@ -156,7 +132,7 @@
             // 
             this.Txt_Gender.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Txt_Gender.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Txt_Gender.Location = new System.Drawing.Point(186, 126);
+            this.Txt_Gender.Location = new System.Drawing.Point(186, 134);
             this.Txt_Gender.Name = "Txt_Gender";
             this.Txt_Gender.Size = new System.Drawing.Size(253, 31);
             this.Txt_Gender.TabIndex = 15;
@@ -165,26 +141,40 @@
             // 
             this.Txt_Note.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Txt_Note.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Txt_Note.Location = new System.Drawing.Point(186, 163);
+            this.Txt_Note.Location = new System.Drawing.Point(186, 171);
             this.Txt_Note.Name = "Txt_Note";
             this.Txt_Note.Size = new System.Drawing.Size(253, 31);
             this.Txt_Note.TabIndex = 16;
             // 
-            // Txt_Owner
+            // comboBox1
             // 
-            this.Txt_Owner.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Txt_Owner.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Txt_Owner.Location = new System.Drawing.Point(186, 93);
-            this.Txt_Owner.Name = "Txt_Owner";
-            this.Txt_Owner.Size = new System.Drawing.Size(253, 31);
-            this.Txt_Owner.TabIndex = 17;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(186, 95);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(253, 33);
+            this.comboBox1.TabIndex = 18;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // Btn_OwnerAdd
+            // 
+            this.Btn_OwnerAdd.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_OwnerAdd.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Btn_OwnerAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(88)))), ((int)(((byte)(100)))));
+            this.Btn_OwnerAdd.Location = new System.Drawing.Point(50, 231);
+            this.Btn_OwnerAdd.Name = "Btn_OwnerAdd";
+            this.Btn_OwnerAdd.Size = new System.Drawing.Size(181, 29);
+            this.Btn_OwnerAdd.TabIndex = 19;
+            this.Btn_OwnerAdd.Text = "Yeni Hasta Sahibi Ekle";
+            this.Btn_OwnerAdd.Click += new System.EventHandler(this.Btn_OwnerAdd_Click_1);
             // 
             // PatientsAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(473, 283);
-            this.Controls.Add(this.Txt_Owner);
+            this.ClientSize = new System.Drawing.Size(491, 319);
+            this.Controls.Add(this.Btn_OwnerAdd);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.Txt_Note);
             this.Controls.Add(this.Txt_Gender);
             this.Controls.Add(this.Txt_Name);
@@ -194,7 +184,6 @@
             this.Controls.Add(this.foxLabel3);
             this.Controls.Add(this.foxLabel2);
             this.Controls.Add(this.foxLabel1);
-            this.Controls.Add(this.nightControlBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "PatientsAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -205,8 +194,6 @@
         }
 
         #endregion
-
-        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
         private ReaLTaiizor.Controls.FoxLabel foxLabel1;
         private ReaLTaiizor.Controls.FoxLabel foxLabel2;
         private ReaLTaiizor.Controls.FoxLabel foxLabel3;
@@ -216,6 +203,8 @@
         private System.Windows.Forms.TextBox Txt_Name;
         private System.Windows.Forms.TextBox Txt_Gender;
         private System.Windows.Forms.TextBox Txt_Note;
-        private System.Windows.Forms.TextBox Txt_Owner;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private ReaLTaiizor.Controls.FoxLabel Btn_OwnerAdd;
+
     }
 }

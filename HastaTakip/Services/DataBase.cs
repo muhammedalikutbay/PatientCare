@@ -24,7 +24,7 @@ namespace HastaTakip.Services
 	                      ""PatientNote""	TEXT,
 
 	                      PRIMARY KEY(""Id""),
-	                      FOREIGN KEY(""OwnerId"") REFERENCES ""PatientOwners""(""Id"")
+	                      FOREIGN KEY(""OwnerId"") REFERENCES ""PatientsOwner""(""Id"")
                     );";
                 ;
 

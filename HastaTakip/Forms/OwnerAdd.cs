@@ -2,7 +2,6 @@
 using System.Data.SQLite;
 using System.Windows.Forms;
 using HastaTakip.Models;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace HastaTakip.Forms
 {
@@ -13,7 +12,7 @@ namespace HastaTakip.Forms
             InitializeComponent();
         }
 
-        private void Btn_Add_Click(object sender, EventArgs e)
+        private void Btn_Add_Click_1(object sender, EventArgs e)
         {
             PatientOwner patientOwner = new PatientOwner()
             {
@@ -26,16 +25,24 @@ namespace HastaTakip.Forms
                 conn.Open();
 
                 string query =
-                    $"INSERT INTO Patients (OwnerName,OwnerAdress,OwnerPhone) VALUES ('{patientOwner.OwnerName}','{patientOwner.OwnerAdress}','{patientOwner.OwnerPhone}')";
+                    "INSERT INTO PatientsOwner (OwnerName, OwnerAdress, OwnerPhone) VALUES (@OwnerName, @OwnerAdress, @OwnerPhone)";
                 using (SQLiteCommand cmd = new SQLiteCommand(query, conn))
                 {
+                    cmd.Parameters.AddWithValue("@OwnerName", patientOwner.OwnerName);
+                    cmd.Parameters.AddWithValue("@OwnerAdress", patientOwner.OwnerAdress);
+                    cmd.Parameters.AddWithValue("@OwnerPhone", patientOwner.OwnerPhone);
                     cmd.ExecuteNonQuery();
                     Clients clients = new Clients();
                     MessageBox.Show("Veri başarıyla eklendi!");
                     clients.LoadData();
                     this.Close();
+                    PatientsAdd patientsAdd = new PatientsAdd();
+                    patientsAdd.TopMost = true;
+                    patientsAdd.Show();
                 }
             }
         }
+
+
     }
 }

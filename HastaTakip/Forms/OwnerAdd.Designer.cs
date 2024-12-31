@@ -37,7 +37,6 @@
             this.foxLabel3 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel1 = new ReaLTaiizor.Controls.FoxLabel();
             this.foxLabel2 = new ReaLTaiizor.Controls.FoxLabel();
-            this.nightControlBox1 = new ReaLTaiizor.Controls.NightControlBox();
             this.SuspendLayout();
             // 
             // Txt_Phone
@@ -98,6 +97,7 @@
             this.Btn_Add.Name = "Btn_Add";
             this.Btn_Add.Size = new System.Drawing.Size(64, 64);
             this.Btn_Add.TabIndex = 22;
+            this.Btn_Add.Click += new System.EventHandler(this.Btn_Add_Click_1);
             // 
             // foxLabel3
             // 
@@ -132,36 +132,11 @@
             this.foxLabel2.TabIndex = 19;
             this.foxLabel2.Text = "Adresi:";
             // 
-            // nightControlBox1
-            // 
-            this.nightControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.nightControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.nightControlBox1.CloseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.nightControlBox1.CloseHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.nightControlBox1.DefaultLocation = true;
-            this.nightControlBox1.DisableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox1.DisableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.nightControlBox1.EnableCloseColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.EnableMaximizeButton = true;
-            this.nightControlBox1.EnableMaximizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.EnableMinimizeButton = true;
-            this.nightControlBox1.EnableMinimizeColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(160)))), ((int)(((byte)(160)))));
-            this.nightControlBox1.Location = new System.Drawing.Point(290, 12);
-            this.nightControlBox1.MaximizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox1.MaximizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.MinimizeHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.nightControlBox1.MinimizeHoverForeColor = System.Drawing.Color.White;
-            this.nightControlBox1.Name = "nightControlBox1";
-            this.nightControlBox1.Size = new System.Drawing.Size(139, 31);
-            this.nightControlBox1.TabIndex = 27;
-            // 
             // OwnerAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(437, 256);
-            this.Controls.Add(this.nightControlBox1);
             this.Controls.Add(this.Txt_Phone);
             this.Controls.Add(this.Txt_Adress);
             this.Controls.Add(this.Txt_Name);
@@ -172,6 +147,7 @@
             this.Controls.Add(this.foxLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "OwnerAdd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OwnerAdd";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -187,6 +163,5 @@
         private ReaLTaiizor.Controls.FoxLabel foxLabel3;
         private ReaLTaiizor.Controls.FoxLabel foxLabel1;
         private ReaLTaiizor.Controls.FoxLabel foxLabel2;
-        private ReaLTaiizor.Controls.NightControlBox nightControlBox1;
     }
 }
