@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Data;
+using System.Data.SQLite;
 using System.Windows.Forms;
 
 namespace HastaTakip.Forms
@@ -15,11 +9,36 @@ namespace HastaTakip.Forms
         public Clients()
         {
             InitializeComponent();
+            LoadData();
         }
 
-        private void bigLabel1_Click(object sender, EventArgs e)
+        public void LoadData()
         {
+            // SQLite bağlantısı
+            using (SQLiteConnection conn = new SQLiteConnection("Data Source=pf55.db;Version=3;"))
+            {
+                conn.Open();
+                string query = "SELECT * FROM Patients";
+                SQLiteDataAdapter da = new SQLiteDataAdapter(query, conn);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                DGW_Clients.DataSource = dt;
+            }
+        }
 
+        private void Btn_Add_Click(object sender, System.EventArgs e)
+        {
+            PatientsAdd patientsAdd = new PatientsAdd();
+            patientsAdd.ShowDialog();
+        }
+
+        private void Btn_Edit_Click(object sender, System.EventArgs e) { }
+
+        private void Btn_Delete_Click(object sender, System.EventArgs e) { }
+
+        private void Txt_Refresh_Click(object sender, System.EventArgs e)
+        {
+            LoadData();
         }
     }
 }

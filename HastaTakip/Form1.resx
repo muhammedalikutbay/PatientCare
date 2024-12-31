@@ -191,6 +191,78 @@
   <data name="&gt;&gt;btnMainPage.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;nightControlBox1.Name" xml:space="preserve">
+    <value>nightControlBox1</value>
+  </data>
+  <data name="&gt;&gt;nightControlBox1.Type" xml:space="preserve">
+    <value>ReaLTaiizor.Controls.NightControlBox, ReaLTaiizor, Version=3.8.1.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nightControlBox1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;nightControlBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;btnHam.Name" xml:space="preserve">
+    <value>btnHam</value>
+  </data>
+  <data name="&gt;&gt;btnHam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnHam.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;btnHam.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1280, 64</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAD
@@ -374,29 +446,104 @@
   <data name="&gt;&gt;btnHam.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="panel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
+  <data name="&gt;&gt;pnMainPage.Name" xml:space="preserve">
+    <value>pnMainPage</value>
   </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1280, 64</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+  <data name="&gt;&gt;pnMainPage.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnMainPage.Parent" xml:space="preserve">
+    <value>sidebar</value>
+  </data>
+  <data name="&gt;&gt;pnMainPage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pnClients.Name" xml:space="preserve">
+    <value>pnClients</value>
+  </data>
+  <data name="&gt;&gt;pnClients.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnClients.Parent" xml:space="preserve">
+    <value>sidebar</value>
+  </data>
+  <data name="&gt;&gt;pnClients.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pnToDo.Name" xml:space="preserve">
+    <value>pnToDo</value>
+  </data>
+  <data name="&gt;&gt;pnToDo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnToDo.Parent" xml:space="preserve">
+    <value>sidebar</value>
+  </data>
+  <data name="&gt;&gt;pnToDo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pnCheckList.Name" xml:space="preserve">
+    <value>pnCheckList</value>
+  </data>
+  <data name="&gt;&gt;pnCheckList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnCheckList.Parent" xml:space="preserve">
+    <value>sidebar</value>
+  </data>
+  <data name="&gt;&gt;pnCheckList.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pnBalanceSheet.Name" xml:space="preserve">
+    <value>pnBalanceSheet</value>
+  </data>
+  <data name="&gt;&gt;pnBalanceSheet.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnBalanceSheet.Parent" xml:space="preserve">
+    <value>sidebar</value>
+  </data>
+  <data name="&gt;&gt;pnBalanceSheet.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;pnSettings.Name" xml:space="preserve">
+    <value>pnSettings</value>
+  </data>
+  <data name="&gt;&gt;pnSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnSettings.Parent" xml:space="preserve">
+    <value>sidebar</value>
+  </data>
+  <data name="&gt;&gt;pnSettings.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="sidebar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="sidebar.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="sidebar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 64</value>
+  </data>
+  <data name="sidebar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 630</value>
+  </data>
+  <data name="sidebar.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;sidebar.Name" xml:space="preserve">
+    <value>sidebar</value>
+  </data>
+  <data name="&gt;&gt;sidebar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sidebar.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;sidebar.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="pnMainPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 32</value>
@@ -421,6 +568,42 @@
   </data>
   <data name="&gt;&gt;pnMainPage.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnClient.Name" xml:space="preserve">
+    <value>btnClient</value>
+  </data>
+  <data name="&gt;&gt;btnClient.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnClient.Parent" xml:space="preserve">
+    <value>pnClients</value>
+  </data>
+  <data name="&gt;&gt;btnClient.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnClients.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 128</value>
+  </data>
+  <data name="pnClients.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 32, 0, 0</value>
+  </data>
+  <data name="pnClients.Size" type="System.Drawing.Size, System.Drawing">
+    <value>384, 64</value>
+  </data>
+  <data name="pnClients.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;pnClients.Name" xml:space="preserve">
+    <value>pnClients</value>
+  </data>
+  <data name="&gt;&gt;pnClients.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnClients.Parent" xml:space="preserve">
+    <value>sidebar</value>
+  </data>
+  <data name="&gt;&gt;pnClients.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnClient.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -485,29 +668,41 @@
   <data name="&gt;&gt;btnClient.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="pnClients.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 128</value>
+  <data name="&gt;&gt;btnToDo.Name" xml:space="preserve">
+    <value>btnToDo</value>
   </data>
-  <data name="pnClients.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;btnToDo.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnToDo.Parent" xml:space="preserve">
+    <value>pnToDo</value>
+  </data>
+  <data name="&gt;&gt;btnToDo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnToDo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 224</value>
+  </data>
+  <data name="pnToDo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 32, 0, 0</value>
   </data>
-  <data name="pnClients.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pnToDo.Size" type="System.Drawing.Size, System.Drawing">
     <value>384, 64</value>
   </data>
-  <data name="pnClients.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="pnToDo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
   </data>
-  <data name="&gt;&gt;pnClients.Name" xml:space="preserve">
-    <value>pnClients</value>
+  <data name="&gt;&gt;pnToDo.Name" xml:space="preserve">
+    <value>pnToDo</value>
   </data>
-  <data name="&gt;&gt;pnClients.Type" xml:space="preserve">
+  <data name="&gt;&gt;pnToDo.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnClients.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnToDo.Parent" xml:space="preserve">
     <value>sidebar</value>
   </data>
-  <data name="&gt;&gt;pnClients.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;pnToDo.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="btnToDo.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -586,29 +781,41 @@
   <data name="&gt;&gt;btnToDo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="pnToDo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 224</value>
+  <data name="&gt;&gt;btnCheckList.Name" xml:space="preserve">
+    <value>btnCheckList</value>
   </data>
-  <data name="pnToDo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;btnCheckList.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnCheckList.Parent" xml:space="preserve">
+    <value>pnCheckList</value>
+  </data>
+  <data name="&gt;&gt;btnCheckList.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnCheckList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 320</value>
+  </data>
+  <data name="pnCheckList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 32, 0, 0</value>
   </data>
-  <data name="pnToDo.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pnCheckList.Size" type="System.Drawing.Size, System.Drawing">
     <value>384, 64</value>
   </data>
-  <data name="pnToDo.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="pnCheckList.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;pnToDo.Name" xml:space="preserve">
-    <value>pnToDo</value>
+  <data name="&gt;&gt;pnCheckList.Name" xml:space="preserve">
+    <value>pnCheckList</value>
   </data>
-  <data name="&gt;&gt;pnToDo.Type" xml:space="preserve">
+  <data name="&gt;&gt;pnCheckList.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnToDo.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnCheckList.Parent" xml:space="preserve">
     <value>sidebar</value>
   </data>
-  <data name="&gt;&gt;pnToDo.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;pnCheckList.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="btnCheckList.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -678,29 +885,41 @@
   <data name="&gt;&gt;btnCheckList.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="pnCheckList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 320</value>
+  <data name="&gt;&gt;btnBalanceSheet.Name" xml:space="preserve">
+    <value>btnBalanceSheet</value>
   </data>
-  <data name="pnCheckList.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;btnBalanceSheet.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnBalanceSheet.Parent" xml:space="preserve">
+    <value>pnBalanceSheet</value>
+  </data>
+  <data name="&gt;&gt;btnBalanceSheet.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnBalanceSheet.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 416</value>
+  </data>
+  <data name="pnBalanceSheet.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 32, 0, 0</value>
   </data>
-  <data name="pnCheckList.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pnBalanceSheet.Size" type="System.Drawing.Size, System.Drawing">
     <value>384, 64</value>
   </data>
-  <data name="pnCheckList.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="pnBalanceSheet.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;pnCheckList.Name" xml:space="preserve">
-    <value>pnCheckList</value>
+  <data name="&gt;&gt;pnBalanceSheet.Name" xml:space="preserve">
+    <value>pnBalanceSheet</value>
   </data>
-  <data name="&gt;&gt;pnCheckList.Type" xml:space="preserve">
+  <data name="&gt;&gt;pnBalanceSheet.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnCheckList.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnBalanceSheet.Parent" xml:space="preserve">
     <value>sidebar</value>
   </data>
-  <data name="&gt;&gt;pnCheckList.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;pnBalanceSheet.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="btnBalanceSheet.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -784,29 +1003,41 @@
   <data name="&gt;&gt;btnBalanceSheet.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="pnBalanceSheet.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 416</value>
+  <data name="&gt;&gt;btnSettings.Name" xml:space="preserve">
+    <value>btnSettings</value>
   </data>
-  <data name="pnBalanceSheet.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="&gt;&gt;btnSettings.Type" xml:space="preserve">
+    <value>Bunifu.Framework.UI.BunifuFlatButton, Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnSettings.Parent" xml:space="preserve">
+    <value>pnSettings</value>
+  </data>
+  <data name="&gt;&gt;btnSettings.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnSettings.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 512</value>
+  </data>
+  <data name="pnSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 32, 0, 0</value>
   </data>
-  <data name="pnBalanceSheet.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="pnSettings.Size" type="System.Drawing.Size, System.Drawing">
     <value>384, 64</value>
   </data>
-  <data name="pnBalanceSheet.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="pnSettings.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;pnBalanceSheet.Name" xml:space="preserve">
-    <value>pnBalanceSheet</value>
+  <data name="&gt;&gt;pnSettings.Name" xml:space="preserve">
+    <value>pnSettings</value>
   </data>
-  <data name="&gt;&gt;pnBalanceSheet.Type" xml:space="preserve">
+  <data name="&gt;&gt;pnSettings.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;pnBalanceSheet.Parent" xml:space="preserve">
+  <data name="&gt;&gt;pnSettings.Parent" xml:space="preserve">
     <value>sidebar</value>
   </data>
-  <data name="&gt;&gt;pnBalanceSheet.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;pnSettings.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="btnSettings.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -910,57 +1141,6 @@
   <data name="&gt;&gt;btnSettings.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="pnSettings.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 512</value>
-  </data>
-  <data name="pnSettings.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 32, 0, 0</value>
-  </data>
-  <data name="pnSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 64</value>
-  </data>
-  <data name="pnSettings.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;pnSettings.Name" xml:space="preserve">
-    <value>pnSettings</value>
-  </data>
-  <data name="&gt;&gt;pnSettings.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnSettings.Parent" xml:space="preserve">
-    <value>sidebar</value>
-  </data>
-  <data name="&gt;&gt;pnSettings.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="sidebar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Left</value>
-  </data>
-  <data name="sidebar.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
-    <value>TopDown</value>
-  </data>
-  <data name="sidebar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 64</value>
-  </data>
-  <data name="sidebar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>384, 630</value>
-  </data>
-  <data name="sidebar.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;sidebar.Name" xml:space="preserve">
-    <value>sidebar</value>
-  </data>
-  <data name="&gt;&gt;sidebar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sidebar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;sidebar.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <metadata name="sidebarTransition.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -988,11 +1168,14 @@
   <data name="&gt;&gt;pnContent.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="sqLiteCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>160, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>79</value>
+    <value>35</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -1011,6 +1194,12 @@
   </data>
   <data name="&gt;&gt;sidebarTransition.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sqLiteCommand1.Name" xml:space="preserve">
+    <value>sqLiteCommand1</value>
+  </data>
+  <data name="&gt;&gt;sqLiteCommand1.Type" xml:space="preserve">
+    <value>System.Data.SQLite.SQLiteCommand, System.Data.SQLite, Version=1.0.119.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

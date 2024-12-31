@@ -50,6 +50,7 @@
             this.btnSettings = new Bunifu.Framework.UI.BunifuFlatButton();
             this.sidebarTransition = new System.Windows.Forms.Timer(this.components);
             this.pnContent = new System.Windows.Forms.Panel();
+            this.sqLiteCommand1 = new System.Data.SQLite.SQLiteCommand();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnHam)).BeginInit();
@@ -362,6 +363,10 @@
             resources.ApplyResources(this.pnContent, "pnContent");
             this.pnContent.Name = "pnContent";
             // 
+            // sqLiteCommand1
+            // 
+            this.sqLiteCommand1.CommandText = null;
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -412,6 +417,7 @@
         private System.Windows.Forms.Panel pnClients;
         private Bunifu.Framework.UI.BunifuFlatButton btnClient;
         private System.Windows.Forms.Panel pnContent;
+        private System.Data.SQLite.SQLiteCommand sqLiteCommand1;
     }
 }
 

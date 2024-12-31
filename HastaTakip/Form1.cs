@@ -19,16 +19,6 @@ namespace HastaTakip
 {
     public partial class Form1 : Form
     {
-        /*
-        MainPage mainPage;
-        Clients clients;
-        ToDo todo;
-        CheckList checkList;
-        BalanceSheet balanceSheet;
-        Settings settings;
-        */
-
-
         public Form1()
         {
             InitializeComponent();
@@ -41,30 +31,15 @@ namespace HastaTakip
 
         private void LoadFormIntoPanel(Form form)
         {
-            // Paneli temizle
             pnContent.Controls.Clear();
-
-            // Formun özelliklerini ayarla
             form.TopLevel = false;
             form.Dock = DockStyle.Fill;
-
-            // Formu panel içine ekle ve göster
             pnContent.Controls.Add(form);
             form.Show();
         }
 
         bool sidebarExpand = true;
 
-        /* public void panelWidth(int sidebarWidth)
-         {
-             pnMainPage.Width= sidebarWidth;
-             pnToDo.Width = sidebarWidth;
-             pnCheckList.Width = sidebarWidth;
-             pnBalanceSheet.Width = sidebarWidth;
-             pnSettings.Width = sidebarWidth;
-             pnClients.Width = sidebarWidth;
-         }
-        */
         private void SidebarTransiton_Tick(object sender, EventArgs e)
         {
             if (sidebarExpand)
@@ -74,7 +49,6 @@ namespace HastaTakip
                 {
                     sidebarExpand = false;
                     sidebarTransition.Stop();
-                    // panelWidth(sidebar.Width);
                 }
             }
             else
@@ -84,7 +58,6 @@ namespace HastaTakip
                 {
                     sidebarExpand = true;
                     sidebarTransition.Stop();
-                    // panelWidth(sidebar.Width);
                 }
             }
         }
@@ -92,7 +65,6 @@ namespace HastaTakip
         private void btnHam_Click(object sender, EventArgs e)
         {
             sidebarTransition.Start();
-            throw new NotImplementedException();
         }
 
         private void btnMainPage_Click(object sender, EventArgs e)
