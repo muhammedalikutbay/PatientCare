@@ -42,7 +42,5 @@ namespace HastaTakip.Forms
                 }
             }
         }
-
-
     }
 }
